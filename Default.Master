@@ -1,41 +1,58 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.pas" Inherits="ng2AspNet._Default" %>
 
-<html>
+<html lang="en-gb">
 <head runat="server">
     <title></title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet"/>
+    <link id="tbsFontAwesome" rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Default.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-<asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div class="header">
-      The header goes here
+  <div class="outer-wrapper">
+    <div class="outer-left">
     </div>
-    <hr />
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <div class="outer-right">
+    </div>
+    <div class="outer-centre">
+      <div class="header">
+        The header goes here
+        <hr />
+      </div>
+      <div class="content">
+        <div class="content-row">
+          <div class="content-left">
+          </div>
+          <div class="content-centre">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
+            </asp:ContentPlaceHolder>
+          </div>
+          <div class="content-right">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <hr />
+        The footer goes here
+      </div>
     </div>
-    </form>
-    <hr />
-    <div class="footer">
-      The footer goes here
-    </div>
+  </div>
 </body>
 </html>

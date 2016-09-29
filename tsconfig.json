@@ -3,12 +3,17 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
+    //"outDir": "dist/unbundled",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "types": [
+      "es6-shim",
+      "node"
+    ]
   },
-  "compileOnSave": true
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules"
+  ]
 }
