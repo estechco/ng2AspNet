@@ -10,3 +10,12 @@ Credit for the starting point of this project goes to Angular.io and their VS 20
 https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html
 
 This is the SystemJs variant and will probably require you to save any one of the .ts files to generate the associated .js files?
+
+To install simply...
+
+git clone https://github.com/estechco/ng2AspNet.git
+cd ng2AspNet
+npm install
+
+...then load VS sln file and build .NET assembly
+
